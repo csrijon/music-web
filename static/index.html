@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/x-icon" href="/static/image/weed.jpg">
+    <title>On High</title>
+</head>
+
+<body>
+    <header>
+        <h3 style="font-size: 1.3rem;" >On High</h3>
+        <ul>
+            <li><span class="material-symbols-outlined">notifications</span></li>
+            <li><img src="/static/image/slogo.jpg" alt="logo"></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="search">
+            <!-- <form class="search-form">
+                <input type="text" id="input" placeholder="Search.." name="search" class="search-input">
+                
+            </form> -->
+            <div class="input-wrapper">
+                <input type="text" placeholder="Type here..." name="text" class="search-input" />
+                <!-- <button class="search-button" id="btn" >Search</button> -->
+              </div>
+        </div>
+        <div class="text">
+            <p style="font-weight: 600; color: #d94e4ee0; " >Music</p>
+            <div class="line"></div>
+        </div>
+        <div class="song">
+        </div>
+    </div>
+
+    <div class="music-player">
+        <div class="track-info">
+            <div class="image">
+                <img  id="footer-img" style="width: 50px; display: none; height: 50px; border-radius: 50%; animation: spinning82341 3s linear infinite; " src="/static/image/slogo.jpg" alt="track">
+            </div>
+            <!-- <div class="arrow">
+                <span id="Arrow" class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </div> -->
+            <div class="textlanguage">
+                <p  class="track-title"></p>
+            <p class="track-art"></p>
+        </div>
+        </div>
+        <div class="progress-bar-container">
+            <span class="current-time">0:00</span>
+            <input type="range" class="progress-bar" value="0" max="262">
+            <span class="duration">0:00</span>
+        </div>
+        <div class="controls">
+                <span class="material-symbols-outlined">shuffle</span>
+                <span id="skip-previous" class="material-symbols-outlined">skip_previous</span>
+                <span id="onclick" class="material-symbols-outlined">play_arrow</span>
+                <span id="skip-next" class="material-symbols-outlined">skip_next</span>
+                <span class="material-symbols-outlined">repeat</span>
+        </div>
+        <div class="bottom-menu">
+            <button  class="up-next">Up next</button>
+            <button class="lyrics">©Made By Srijon</button>
+            <div class="arrow">
+                <span id="Arrow" class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </div>
+        </div>
+        <audio autoplay id="pesudo-player" "></audio>
+    </div>
+    </div>
+    <div class="top-player">
+        <div id="leftside" class="left">
+            <img id="logo" alt="">
+            <img style="display: none; border-radius: 50%; z-index: 10000; " id="leftimage" src="/static/image/slogo.jpg" alt="logo">
+            <p id="pa-graph" ></p>
+            <p id="air-name" ></p>
+        </div>
+        <div class="right">
+            <p style="font-weight: 600;" >Up Next</p>
+            <div class="show">
+                <div class="home"></div>
+            </div>
+        </div>
+        </div>
+        <div class="loading-wave">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+          </div>
+          <div class="upnextsec">
+            
+          </div>
+
+    <script src="/static/script.js"></script>
+    <script src="/static/musicApi.js"></script>
+  
+      
+</body>
+
+</html>
